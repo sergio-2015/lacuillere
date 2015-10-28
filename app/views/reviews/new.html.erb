@@ -1,0 +1,10 @@
+<h1>Please add a new review to this restaurant</h1>
+
+<%= form_for @review, url: restaurant_reviews_path(@restaurant) do |f| %>
+  <%= f.label :content %>
+  <%= f.text_area :content %>
+  <%= f.label :rating %>
+  <%= f.number_field :rating %>
+  <%= f.submit %>
+<% end %>
+
